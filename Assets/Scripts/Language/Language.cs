@@ -22,7 +22,7 @@ public class Language : MonoBehaviour
 		LoadLanguage();
 	}
 
-	public void LoadLanguage()
+	public void LoadLanguage()//Adds the default language at first, then installs whatever language you left off
 	{
 		if(Fields == null)
         {
@@ -55,7 +55,7 @@ public class Language : MonoBehaviour
 		}
 	}
 
-	public static string GetTraduction(string key)
+	public static string GetTraduction(string key)//Gets the translation of the key
 	{
 		if (!Fields.ContainsKey(key)) {
 			Debug.LogError("There is no key with name: [" + key + "] in your text files");

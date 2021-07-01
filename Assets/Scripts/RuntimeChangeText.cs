@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//This is test script for non-static text change.The important place is line 20.
 public class RuntimeChangeText : MonoBehaviour
 {
     public List<string> texts = new List<string>();
@@ -17,7 +18,7 @@ public class RuntimeChangeText : MonoBehaviour
 
     private void ChangeText()
     {
-        GetComponent<Translator>().TranslateText = texts[textCount];
+        GetComponent<Translator>().TranslateText = texts[textCount];//You can use anything you added key from resources.
         textCount++;
         if(textCount >= texts.Count)
         {

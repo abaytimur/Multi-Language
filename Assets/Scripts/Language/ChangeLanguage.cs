@@ -7,7 +7,7 @@ public class ChangeLanguage : MonoBehaviour
     public string[] myLangs;
 	int index;
 
-	public void ChangeLanguageType(int myLanguage)
+	public void ChangeLanguageType(int myLanguage)//Change language
 	{
 		index = myLanguage;
 		PlayerPrefs.SetInt ("_language_index", index);
