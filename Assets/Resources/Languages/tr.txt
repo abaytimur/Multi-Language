@@ -1,3 +1,7 @@
 LANGUAGE=Dil
 EN=İngilizce
 TR=Türkçe
+HI=Merhaba
+NICE=Güzel
+GOOD=İyi
+BAD=Kötü

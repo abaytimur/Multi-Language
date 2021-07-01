@@ -1,3 +1,7 @@
 LANGUAGE=Language
 EN=English
 TR=Turkish
+HI=Hi
+NICE=Nice
+GOOD=Good
+BAD=Bad

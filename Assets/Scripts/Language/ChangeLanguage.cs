@@ -12,11 +12,15 @@ public class ChangeLanguage : MonoBehaviour
 		index = myLanguage;
 		PlayerPrefs.SetInt ("_language_index", index);
 		PlayerPrefs.SetString ("_language", myLangs[index]);
+		Language.Instance.LoadLanguage();
 		ApplyLanguageChanges();
 	}
 
-	void ApplyLanguageChanges ()
+	void ApplyLanguageChanges()
 	{
-		SceneManager.LoadScene(0);
+		foreach (Translator translator in Language.Instance.textsToTranslate)
+        {
+			translator.Translate();
+        }
 	}
 }
