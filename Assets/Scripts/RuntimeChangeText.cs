@@ -18,7 +18,7 @@ public class RuntimeChangeText : MonoBehaviour
 
     private void ChangeText()
     {
-        GetComponent<Translator>().TranslateText = texts[textCount];//You can use anything you added key from resources.
+        GetComponent<Translator>().Translate = texts[textCount];//You can use anything you added key from resources.
         textCount++;
         if(textCount >= texts.Count)
         {

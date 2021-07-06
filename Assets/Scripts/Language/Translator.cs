@@ -7,7 +7,7 @@ public class Translator : MonoBehaviour
 	public string key;
 
 	//You can use for non-static texts.For example RuntimeChangeText.cs Line:20.
-	public string TranslateText
+	public string Translate
 	{
 		get { return key; }
 		set
@@ -20,11 +20,6 @@ public class Translator : MonoBehaviour
 	public void Start()
 	{
 		Language.Instance.textsToTranslate.Add(this);
-		Translate();
-	}
-
-	public void Translate()
-    {
-		GetComponent<Text>().text = Language.GetTraduction(key);
+		Translate = key;
 	}
 }

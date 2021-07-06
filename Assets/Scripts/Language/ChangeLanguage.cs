@@ -20,7 +20,7 @@ public class ChangeLanguage : MonoBehaviour
 	{
 		foreach (Translator translator in Language.Instance.textsToTranslate)
         {
-			translator.Translate();
+			translator.Translate = translator.key;
         }
 	}
 }
